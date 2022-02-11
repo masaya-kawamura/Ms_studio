@@ -1,0 +1,8 @@
+
+<% @gallerys.each do |gallery| %>
+<div>
+  <%= gallery.title %>
+  <%= image_tag gallery.photo.url %>
+  <%= gallery.caption %>
+</div>
+<% end %>

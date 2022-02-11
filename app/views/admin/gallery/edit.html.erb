@@ -1,0 +1,19 @@
+<%= form_with model: @gallery, url: admin_gallery_path, method: :patch, local: true do |form| %>
+<div class="field">
+<%= form.label :title %>
+<%= form.text_field :title %>
+</div>
+
+<!-- ここから追加するコード -->
+<div class="field">
+<%= form.label :photo %>
+<%= form.file_field :photo %>
+</div>
+
+<div class="field">
+<%= form.label :caption %>
+<%= form.text_area :caption %>
+</div>
+
+<%= form.submit %>
+<% end %>
